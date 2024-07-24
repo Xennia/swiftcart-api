@@ -1,24 +1,43 @@
-### Register User
-POST http://localhost:3000/api/users/register
+### Register User without Password
+POST http://localhost:3001/users/register
 Content-Type: application/json
 
 {
-  "username": "testuser",
-  "email": "testuser@example.com",
+  "username": "testuser2",
+  "email": "testuser2@example.com"
+}
+
+### Register User with Password
+POST http://localhost:3001/api/users/register
+Content-Type: application/json
+
+{
+  "username": "testuser3",
+  "email": "testuser3@example.com",
   "password": "password123"
 }
 
-### Login User
+### Login User without Password
 POST http://localhost:3000/api/users/login
 Content-Type: application/json
 
 {
-  "email": "testuser@example.com",
+  "email": "testuser2@example.com"
+}
+
+### Login User with Password
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "testuser3@example.com",
   "password": "password123"
 }
 
 ### List Products
-GET http://localhost:3000/api/products
+
+GET http://localhost:3001/api/products
+
 
 ### Add to Cart
 POST http://localhost:3000/api/cart
