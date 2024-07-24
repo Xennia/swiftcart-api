@@ -11,7 +11,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api', cartRoutes);
 
-sequelize.sync()
+sequelize.sync({ alter: true }) // Ensure database schema is updated
     .then(() => {
         app.listen(3000, () => {
             console.log('Server is running on port 3000');
