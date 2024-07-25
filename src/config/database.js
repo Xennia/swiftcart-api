@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
-require('dotenv').config();
 
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
+const sequelize = new Sequelize('swiftcart_db', 'neondb_owner', '0evYzkCE1fUp', {
+    host: 'ep-crimson-fire-a5710ucj.us-east-2.aws.neon.tech',
     dialect: 'postgres',
     dialectOptions: {
         ssl: {
