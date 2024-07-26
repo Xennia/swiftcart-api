@@ -3,8 +3,8 @@ POST http://localhost:3001/api/users/register
 Content-Type: application/json
 
 {
-  "username": "testuser",
-  "email": "testuser@example.com",
+  "username": "testuser10",
+  "email": "testuser10@example.com",
   "password": "password123"
 }
 
@@ -16,6 +16,9 @@ Content-Type: application/json
   "email": "testuser@example.com",
   "password": "password123"
 }
+
+### List Users
+GET http://localhost:3001/api/users/list
 
 ### List Products
 GET http://localhost:3001/api/products
