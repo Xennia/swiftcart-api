@@ -38,3 +38,14 @@ exports.login = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
+
+// New function to list all users
+exports.listUsers = async (req, res) => {
+    try {
+        const users = await User.findAll();
+        res.json(users);
+    } catch (error) {
+        console.error('Error fetching users:', error);
+        res.status(500).json({ message: error.message });
+    }
+};
