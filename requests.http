@@ -3,9 +3,9 @@ POST http://localhost:3001/api/users/register
 Content-Type: application/json
 
 {
-  "username": "testuser10",
-  "email": "testuser10@example.com",
-  "password": "password123"
+  "username": "testuser13",
+  "email": "testuser13@example.com",
+  "password": "password12345"
 }
 
 ### Login User
@@ -28,8 +28,8 @@ POST http://localhost:3001/api/cart
 Content-Type: application/json
 
 {
-  "userId": 1,
-  "productId": 1,
+  "userId": 77,
+  "productId": 2,
   "quantity": 2
 }
 
